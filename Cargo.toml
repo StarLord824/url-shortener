@@ -1,6 +1,24 @@
 [package]
-name = "url-shortener"
+name = "creative-url-shortener"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+actix-web = { version = "4.4", features = ["macros"] }
+actix-rt = "2.9"
+sqlx = { version = "0.7", features = ["postgres", "runtime-tokio", "macros", "time"] }
+redis = { version = "0.23", features = ["tokio-comp"] }
+nanoid = "0.4"
+validator = { version = "0.16", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+image = "0.24"
+sha2 = "0.10"
+chrono = { version = "0.4", features = ["serde"] }
+thiserror = "1.0"
+dotenv = "0.15"
+fancy-regex = "0.11"
+rand = "0.8"
+lazy_static = "1.4"
+qrcode = "0.12"
+time = "0.3"  # Added for timestamp conversion
